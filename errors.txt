@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 162: expected statement.
+    timer 1.0 action stop("music")
+           ^
+
+Ren'Py Version: Ren'Py 7.3.5.606
+Sun Nov 17 23:55:50 2019
