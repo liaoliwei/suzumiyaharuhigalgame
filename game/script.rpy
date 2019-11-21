@@ -674,28 +674,30 @@ label start:
     "青年犹豫了一下，还是登上了电车。"
     window hide
     nvl clear
+    scene 11_ye_wan_wu_xue
     with fade
     window show
     "随便找了个座位坐下，青年紧盯着车门。"
     "哪怕再有一个人上车也好，就能消除这诡异的气氛。"
     "但直到自动门关闭，都没有任何声音传来。"
     "电车微微摇晃着，离开了月台。"
-    window hide
+    #window hide
     nvl clear
     with fade
-    window show
+    #window show
     "车内的灯光相当昏暗，老式灯泡的亮度甚至不及外面的路灯。"
     "看着车窗外越来越熟悉的风景，青年的眼皮有些沉重。"
     "车厢里只有青年一人，无聊的时间还要持续半小时以上。"
     "这种情况对时常应酬的上班族是常事，青年自然也不只经历过一次两次了。"
-    window hide
+    #window hide
     nvl clear
     with fade
-    window show
+    #window show
     "还好家是终点站，就算真的睡着也不必担心……青年残存的理性这样想着。"
     "酒精终于开始发挥作用，意识昏昏沉沉，看着暗黄的老式灯泡，他逐渐……"
     window hide
     nvl clear
+    scene
     with fade
     window show
     "——"
@@ -705,9 +707,13 @@ label start:
     "青年还没睡着。"
     "他轻掐了几下脸颊，传来一阵痛感，这并不是梦。"
     "但不是梦的话，再怎么说也太奇怪了，四周一片伸手不见五指的漆黑，简直就像——"
+    stop music
     "驶进了某座隧道一般。"
+    scene 12_ye_wan
+    scene 11_ye_wan_wu_xue
     window hide
     nvl clear
+    play music "audio/lianggongbgm/4.mp3" fadeout 1.0 fadein 1.0
     with fade
     window show
     "被酒精麻痹的神经顿时清醒，青年捂着嘴轻轻地呼吸。"
@@ -734,9 +740,13 @@ label start:
     "乘务员相当平静地说出了不得了的话。"
     window hide
     nvl clear
+    scene 6_xue_xin
     with fade
+    stop music
     window show
     "“大概已经是十年之前了吧，那件事现在说起来还令人毛骨悚然，住在里面的夫妻俩和女儿无一幸免。据说杀人魔一早就潜进了房子里，丈夫被钝器敲破脑袋，妻子被划破喉咙之后挣扎着爬到玄关附近，血都已经流干了。但那个小女孩的尸体却更为惊悚……”"
+    play music "audio/1.mp3" fadeout 1.0 fadein 1.0
+    scene 7_xue_xin
     "“尸体被发现的房间门紧锁着，凶手似乎在行凶后就把她自己丢在了房间里。她倒在地上的血泊中，喉咙上有足以致命的伤口，从墙壁上满满的沾血的指甲印来看，她大概是想从窗户逃走吧，但那对刚上小学的女孩来说实在是太高了……”"
     "“不过，我刚才说的这些都只是我个人的见解。”"
     "乘务员咬了咬嘴唇，叹了一口气。"
@@ -746,7 +756,7 @@ label start:
     "“毕竟那个年代，杀人案多到难以估计，这只不过是其中一起而已……案子最终被归为单纯的杀人案，我后来也因此被调职。现在想来，还是很可恨的事情啊……”"
     window hide
     nvl clear
-    play music "audio/1.mp3" fadeout 1.0 fadein 1.0
+    scene
     with fade
     window show
     "乘务员仍在抱怨，但对青年来说，这些已经足够了——"
@@ -806,6 +816,7 @@ label start:
     "……啊，从桌下的角落里找到了。"
     window hide
     nvl clear
+    scene 6_xue_xin
     with fade
     window show
     "走过漫长的走廊，湿哒哒的血迹滴在地板上，正要开锁之时，却突然发现大门敞开着。"
@@ -816,7 +827,7 @@ label start:
     nvl clear
     with fade
     window show
-    "到这里，结束。"
+    "{size=+20}{color=#f00}到这里，结束。{/color}{/size}"
     window hide
     nvl clear
     with fade
