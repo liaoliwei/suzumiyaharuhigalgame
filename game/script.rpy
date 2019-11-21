@@ -351,6 +351,7 @@ label start:
     "“年久失修”这个词恐怕形容的就是这种状况，看上去就很难给人安全感，与他自己的家十分类似，不过总归还是能住人的程度。"
     "他没想太多，便和少女一起踏入了玄关。"
     scene 6_yin_sen
+    with fade
     "玄关处散乱地放着三双鞋子。漫长的走廊两旁，有许多房间，，里面隐隐地传出激烈的谈话声，却没有人出来迎接。"
     "少女在玄关驻足了一会儿，快步拉着他朝里面走去。"
     #window hide
@@ -494,6 +495,7 @@ label start:
     "“我……在回来的路上，似乎看到了某个隧道。”"
     window hide
     scene 12_bai_tian
+    with fade
     window show
     "并没有踏足其中，只是看到而已。"
     "但不知为何，关于这个隧道的记忆却特别明晰。"
@@ -512,18 +514,18 @@ label start:
     "“不，稍等一下。”"
     "正当他描述之时，一个警察却突然打断了他的话。"
     "“你记错了吧，那种地方哪有什么隧道？”"
-    window hide
+    #window hide
     nvl clear
     with fade
-    window show
+    #window show
     "这是个不太有趣的玩笑。"
     "对还是孩童的他来说，就更是如此了。"
     "但警察和自己母亲的脸都异常认真，完全不像在说谎的样子。"
     "“别开玩笑了……”"
-    window hide
+    #window hide
     nvl clear
     with fade
-    window show
+    #window show
     "然后，确实，通往住宅区的路上没有任何隧道。"
     "那里有的只不过是被树林环绕的幽暗的泥土路。"
     "他急忙用有些混乱的脑袋，试图让记忆能符合逻辑。"
@@ -534,107 +536,114 @@ label start:
     "不，不可能——"
     "他曾到少女家里拜访是不争的事实，看到他们一同回家的同学也做了证。"
     "“……”"
-    window hide
+    #window hide
     nvl clear
     with fade
-    window show
+    #window show
     "说来奇怪，在那之后，少女就再没来过学校，他自然也再没去过少女家里。"
     "就算自己提起这件事，周围的人也都会编出一些借口带过话题，他也很快被迫搬家，从这所小学转走。"
     "在告别会上，老师和同学们意味深长地看着他。"
     "仿佛是在看什么奇怪的东西一样，那种实现让人很不舒服。"
     "这就是他有关这件事的最后的记忆。"
-    window hide
+    #window hide
     nvl clear
     with fade
-    window show
+    #window show
+    play music "audio/3.mp3" fadeout 1.0 fadein 1.0
     "时光流转，他已经长成了一名俊朗的青年。"
     "高中毕业后便直接步入社会，托工作地方的前辈的关系，他很快就搬离了父母身边，在市区周围租下了一间房子。工资虽然不甚丰厚，但对于一个人生活、很少去社交的他来说，已经是绰绰有余了。"
     "不过……说来奇怪。"
+    stop music
+    scene shao_nian_fang_jian
     "在那之后，直到现在，他一直有种被什么人监视着的感觉。"
     "时不时总听到些奇怪的脚步声，回过头去却什么都看不到；"
     "深夜躺在床上的时候，突然感觉窗外有透骨的视线盯着自己。"
     "和父母住在一起时还好，等到他长大搬离老家之后，这种感觉就愈发频繁了。"
-    window hide
+    #window hide
     nvl clear
     with fade
-    window show
+    #window show
     "因此，青年在公寓门口的隐秘处安装了摄像头。"
     "数据都被保存在硬盘里，这样只要第二天检查一遍，就能知道究竟发生了什么。"
-    window hide
+    #window hide
     nvl clear
     with fade
-    window show
+    #window show
     "摄像头什么都没有照到。"
     "除了下班回家路过的邻居，不确信它在工作而盯着摄像头的自己以外，什么都没照到。"
     "不过，自从安了这个摄像头之后，被人监视的感觉确实消失了。"
     "是犯人发现了摄像头呢，还是自己的心理安慰呢？青年并未考虑那么多。"
     "至少能正常地生活了，他由衷地感叹道。"
-    window hide
+    #window hide
     nvl clear
     with fade
-    window show
+    #window show
     "距离他安装摄像头已经过去了两个月，这座城市悄然步入了秋天。"
     "在那之后，被跟踪的感觉几乎彻底消失了。"
     "即使偶尔出现，青年也权当是着凉了打冷战，没什么大不了的。"
     stop music
     "到头来，果然还是心理作用嘛。"
-    window hide
+    #window hide
     nvl clear
+    scene 9_ye_wan
     play music "audio/3.mp3" fadeout 1.0 fadein 1.0
     with fade
-    window show
+    #window show
     "“那你还真是神经质啊，这点小事儿就困扰了你这么长时间。”"
     "几杯酒下肚后，青年便把一直以来的故事都告诉了少女。"
     "说巧不巧，明明两人从那之后就再没见过面，这天却在乘坐的电车上一下就认出了彼此。"
     "“现在想来，确实是一段奇妙的回忆呢。”"
     "青年把杯中的酒一饮而尽后，对着少女说道。"
-    window hide
+    #window hide
     nvl clear
     with fade
-    window show
+    #window show
     "青年是单纯外出谈业务，少女则似乎久违地从外国跑了回来。出手阔绰的少女当即签下"
     "“当然，这也是有代价的——”"
     "因此，青年便被少女拽到了酒馆里。"
-    window hide
+    #window hide
     nvl clear
     with fade
-    window show
+    #window show
     "“呀，说起来真是巧呢，居然能一眼认出小学同学之类的，简直是言情剧一样的展开。”"
     "“要是在大街上，我肯定认不出来。但这趟环山电车整条线路都暴露在太阳下面，光照得人想睡也睡不着，就只能盯着其余乘客的脸看，仔细一瞧，自然就想起你的脸了。”"
     "少女抱怨的这一点，青年也深有同感。"
+    stop music
     "这趟电车的采光太过良好，反而成为了乘客们的噩梦。"
-    window hide
+    play music "audio/3.mp3" fadeout 1.0 fadein 1.0
+    #window hide
     nvl clear
     with fade
-    window show
+    #window show
     "不过，因为青年住的地方远离城市，平日里坐这趟列车的人不是很多，很容易找到座位，也算不幸中的万幸了。"
-    window hide
+    #window hide
     nvl clear
     with fade
-    window show
+    #window show
     "酒吧放着时下流行的音乐，再加上少女大大咧咧的玩笑，气氛一直都很高涨。"
     "“不过你变化真大，完全不像以前那样乖巧认真。”"
     "“你记错了吧，我的性格可一直都是这样，从来没变过哟。”"
     "少女断然否定了这点，看来出国真的会给人足够的改变，青年也就没多问什么。"
     "两人开心地回忆着各种事情——"
     "虽然只有少数残留的记忆，但也一直聊到了深夜时分。"
-    window hide
+    #window hide
     nvl clear
     with fade
-    window show
+    #window show
     "“说起来，你说的当时看见的隧道我也有印象，但现在想来，估计只是工程通道吧。你想，那种把集装箱拼在一起的临时建筑，当时还是小孩子的你的脑袋就会把它当成隧道了，正所谓杯弓蛇影嘛。”"
     "少女如此安慰着青年，虽然感觉像是在刻意扯上些引经据典的东西，但仍相当有说服力。"
     "“说的对啊……”"
     "或许正是如此，青年才会放下警惕吧。"
-    window hide
+    #window hide
     nvl clear
     stop music
     with fade
-    window show
+    #window show
     "——现在想来，那真的是个十分愚蠢的念头。"
     window hide
     nvl clear
     play music "audio/lianggongbgm/4.mp3" fadeout 1.0 fadein 1.0
+    scene 1
     with fade
     window show
     "夜色渐浓，月亮隐在云后，时针朝着数字12缓慢移动。"
@@ -642,6 +651,7 @@ label start:
     "这个时间，只要赶一赶还能坐上末班车。"
     window hide
     nvl clear
+    scene yue_tai_ye_wan_wu_che
     with fade
     window show
     "啪嗒，啪嗒，啪嗒。"
@@ -651,10 +661,10 @@ label start:
     "青年的耳边回响着自己的呼气声。"
     "“诶？”"
     "他这时才注意到，月台空无一人。"
-    window hide
+    #window hide
     nvl clear
     with fade
-    window show
+    #window show
     "四周异常寂静，连呼吸声都变得刺耳起来。"
     "说起来，毕竟已经深夜了，这种偏僻的小站，没什么人也是常事。"
     "不过话虽如此，青年乘坐这样的末班车还是第一次。"
