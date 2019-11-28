@@ -116,7 +116,20 @@ label part1.q4.self1:
     g "被人拯救和拯救他人，你更喜欢那种呢？"
 menu:
     "【前者】":
+        jump part1.q4.1
     "【后者】":
+        jump part1.q4.2
+label part1.q4.1:
+    if q4.1 == False and q4.2 == False
+        g "原来如此。 "
+    elif q4.1 == False and q4.2 == True
+        g "哦，跟我猜的不太一样呢。"
+    elif q4.1 == True and q4.2 == False
+        g "果然呢！"
+    g "那还请多多期待。"
+    g "这是属于“他们”的故事。"
+    g "当然，也是属于你的故事。 "
+label part1.q4.2:
     g "原来如此。 "
     g "那还请多多期待。"
     g "这是属于“他们”的故事。"
