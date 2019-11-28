@@ -138,7 +138,9 @@ label start:
     nvl clear
     #with fade
     #window show
-    "从结果来看，这确实是谎言，但他们并没有说谎的意思。毕竟，他们始终相信自己奉行着“诚实守信”的教育方针。如果真的屡屡说谎，提到这个方针时的父母肯定会羞愧地低下头吧。"
+    "从结果来看，这确实是谎言，但他们并没有说谎的意思。"
+    nvl clear
+    "毕竟，他们始终相信自己奉行着“诚实守信”的教育方针。如果真的屡屡说谎，提到这个方针时的父母肯定会羞愧地低下头吧。"
     "他说过谎，自然明白那种罪恶感。"
     window hide
     nvl clear
@@ -333,6 +335,7 @@ label start:
     "“到了，这里就是。”"
     "少女指着自己眼前的建筑说道。"
     "“……”"
+    play sound "audio/duan_pei_yue_5.mp3"
     "他看着面前的建筑，一种说不上来的违和感迎上心头。"
     #window hide
     nvl clear
@@ -353,6 +356,7 @@ label start:
     scene 6_yin_sen
     with fade
     "玄关处散乱地放着三双鞋子。漫长的走廊两旁，有许多房间，，里面隐隐地传出激烈的谈话声，却没有人出来迎接。"
+    play sound "audio/pao_bu_2.mp3"
     "少女在玄关驻足了一会儿，快步拉着他朝里面走去。"
     #window hide
     nvl clear
@@ -392,8 +396,8 @@ label start:
     "“不过……他们不会突然冲过来什么的吗，要是知道你带同学回来的话……”"
     "“没关系，我今天也试着大胆了一回，这个房间的钥匙我已经藏起来了，现在只剩我手上的一把。”"
     "少女亮了亮自己手中的钥匙，收进了口袋里。"
-    "“接下来，该做点什么呢……”"
     stop music
+    "“接下来，该做点什么呢……”"
     #window hide
     nvl clear
     play music "audio/lianggongbgm/3.mp3" fadeout 1.0 fadein 1.0
@@ -418,6 +422,7 @@ label start:
     stop music fadeout 1.0
     "不过，说来奇怪。"
     "他刚好坐在靠门的一侧，门外只要有什么动静，他就能通过地板感知到。"
+    play sound "audio/zou_lu_1.mp3"
     "那个转动门把的家伙走过来时，也是他最先觉察到的。"
     "但……那个人只有来时的脚步声，没有离开时的脚步声。"
     "把耳朵紧贴在门上也什么都听不到，如果那人还在的话，至少会有呼吸的声音。"
@@ -428,7 +433,7 @@ label start:
     #window show
     "他把这些事情告诉少女后，少女却只是摇了摇头，让他不要在意。"
     "“那个人可能只是踮着脚回去了。”"
-    play music "audio/1.mp3" fadeout 1.0 fadein 1.0
+    play sound "audio/duan_pei_yue_5.mp3"
     "不可能，就算是踮脚，踩在地板上的重量也能传达过来。"
     "渐渐浓重起来的诡异气氛，让他不自觉地把手伸向了门锁。"
     #window hide
@@ -444,6 +449,7 @@ label start:
     nvl clear
     with fade
     #window show
+    play music "audio/1.mp3" fadeout 1.0 fadein 1.0
     "按照少女的性格……为了挽留朋友，她或许真的会不择手段吧。"
     "但，即使知道少女没有恶意，这种行为还是令他不安。"
     "恐惧这种东西一旦产生，除非有足够说服自己的理由，否则便会如癌细胞般无限增殖。"
@@ -461,15 +467,21 @@ label start:
     "“等一下——”"
     "少女哀求的声音并未打动他，况且自己选择的这种路径，她也肯定追不上来。"
     "弄清楚情况之后，自己很快就会回来……"
+    play sound "audio/pao_bu_1.mp3"
     "他怀着这样的念头，往少女家的门口跑去。"
     #window hide
     nvl clear
     with fade
     #window show
+    play sound "audio/duan_pei_yue_4.mp3"
     "从窗户下跑到门口，对了，房门……诶？"
     window hide
     stop music
     "怎么……回事？"
+    "……"
+    "……"
+    "……"
+    "……"
     "……"
     #window hide
     nvl clear
@@ -535,15 +547,21 @@ label start:
     "那么是在做梦吗？"
     "不，不可能——"
     "他曾到少女家里拜访是不争的事实，看到他们一同回家的同学也做了证。"
+    scene white
+    with fade
+    stop music
     "“……”"
     #window hide
     nvl clear
+    scene xue_xiao_wai_bu_huang_hun
     with fade
     #window show
     "说来奇怪，在那之后，少女就再没来过学校，他自然也再没去过少女家里。"
     "就算自己提起这件事，周围的人也都会编出一些借口带过话题，他也很快被迫搬家，从这所小学转走。"
     "在告别会上，老师和同学们意味深长地看着他。"
     "仿佛是在看什么奇怪的东西一样，那种实现让人很不舒服。"
+    scene white
+    with fade
     "这就是他有关这件事的最后的记忆。"
     #window hide
     nvl clear
@@ -653,6 +671,8 @@ label start:
     nvl clear
     scene yue_tai_ye_wan_wu_che
     with fade
+    play sound "audio/pao_bu_3.mp3"
+    play music "audio/2.mp3" fadeout 1.0 fadein 1.0
     window show
     "啪嗒，啪嗒，啪嗒。"
     "一口气跑到了月台，距离末班车还有三分钟时间。"
@@ -831,26 +851,38 @@ label start:
     window hide
     nvl clear
     with fade
+    scene 11_bai_tian_wu_xue
     window show
     "“各位乘客非常抱歉，本次列车故障已经解决，预计到站时间为……”"
     "青年被电车的广播拽回了现实。"
     "乘务员早就离开了，车厢内又只剩下他一个人。电车再次开动，虽然灯泡依旧闪个不停，不过行驶中的电车也给了他不少安全感——还有半小时就到家了。"
+    play music "audio/zou_lu_1.mp3"
     "脚步声淹没在了电车行驶的声音里，但仍在他的脑海中回荡。"
     "声音已经深入脑髓，宛若蠕虫一般啃啮着他的神经。"
     "通往旁边车厢的门上的灯变成了绿色，那是它即将打开的征兆。"
+    play sound "audio/chuan_qi_1"
     "青年死死地盯着那扇门。"
+    play sound "audio/chuan_qi_1"
     "随着刺耳的机械声，门缓缓张开——"
+    play sound "audio/chuan_qi_1"
     "那不过是另一节空旷的车厢。"
+    play sound "audio/chuan_qi_1"
     "电灯完好无损，地面一尘不染，单独拍下来作为宣传照片都毫无问题的车厢。"
+    stop music
+    stop sound
     "脑内的脚步声也停了下来。"
     "只是幻听而已，他闭上眼睛呼出了一口气。"
     "大脑给出的理由足够说服自己。"
+    nvl clear
+    with fade
+    scene white
     "白天遇到的“少女”也应该只是其他的同学，从幼儿园到高中有那么多女同学，怎么可能一个个都记住，只是相似的其他人被自己误认成了她而已。"
     "明天自己就搬回去住，彻底告别这个城市……"
     "没关系，一切都会过去……"
     "青年这样想着，睁开了眼睛——"
     window hide
     nvl clear
+    play music "audio/1.mp3"
     with fade
     window show
     "电灯摇曳晃动。"
