@@ -129,7 +129,7 @@ label part1.q4.1:
     g "那还请多多期待。"
     g "这是属于“他们”的故事。"
     g "当然，也是属于你的故事。 "
-    jump part1.1
+    jump part1_1
 label part1.q4.2:
     if q4.1 == False and q4.2 == False
         g "原来如此。 "
@@ -140,4 +140,4 @@ label part1.q4.2:
     g "那还请多多期待。"
     g "这是属于“他们”的故事。"
     g "当然，也是属于你的故事。 "
-    jump part1.1
+    jump part1_2
